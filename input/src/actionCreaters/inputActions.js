@@ -1,3 +1,8 @@
-/**
- * Created by moritakenji on 2017/05/20.
- */
+import { SEND } from '../actionTypes/actions';
+
+export const InputActions = (value) => {
+    return {
+        types: SEND,
+        value
+    }
+}
