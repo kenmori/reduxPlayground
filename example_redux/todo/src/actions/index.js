@@ -22,23 +22,10 @@ export const toggleTodo = (id) => {
 	}
 }
 
-// export const complateTodo = (index) => {
-// 	return {
-// 		type: COMP_TODO,
-// 		index
-// 	}
-// }
-//
 export const setVisibilityFilter = (filter) => {
 	return {
 		type: 'SET_VISIBILITY_FILTER',
 		filter
 	}
 }
-
-//
-// const boundAddTodo = (text) => dispatch(addTodo(text))
-// const boundCompleteTodo = (text) => dispatch(complateTodo(index))
-
-
 
