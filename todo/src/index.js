@@ -9,7 +9,7 @@ let store = createStore(todoApp)
 render (
 	//ProviderはStoreがこれ以下のComponentでconnct()を使えるようにしている。Providerのラッピングなしにconnctを使えない
 	<Provider store={store}>
-		<App />//ルートComponent
+		<div>fafa</div>
 	</Provider>,
 	document.getElementById('root')
 )
