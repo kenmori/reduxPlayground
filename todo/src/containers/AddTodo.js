@@ -4,14 +4,27 @@ import { connect } from 'react-redux'
 
 import { addTodo } from '../actions'
 
-let AddTodo = ({ dispatch }) => {
+let AddTodo = ({ dispatch, add }) => {
 	let input
 	return (
 		<div>
-fafa
+			<button onClick={()=> {add()}} />
 		</div>
 	)
 }
 
-AddTodo = connect()(AddTodo)
+function mapStateToProps(state){
+	return {
+		count: state.count
+	}
+}
+function mapDispatchToProps(dispatch){
+	return {
+		add: function(state){
+			console.log(state);
+		}
+	}
+}
+
+AddTodo = connect(mapStateToProps, mapDispatchToProps)(AddTodo);
 export default AddTodo
