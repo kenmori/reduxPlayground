@@ -1,0 +1,14 @@
+{
+  "extends": ["react-app", "eslint:recommended", "plugin:react/recommended", "prettier"],
+  "plugins": ["react"],
+  "parser": "babel-eslint",
+  "parserOptions": {},
+  "env": {
+    "browser": true,
+    "es6": true
+  },
+  "globals": {},
+  "rules": {
+    "react/jsx-uses-vars": 1
+  }
+}
