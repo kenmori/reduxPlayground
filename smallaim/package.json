@@ -1,5 +1,6 @@
 {
   "name": "smallaim",
+  "main": "lib/index.js",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -20,6 +21,7 @@
   },
   "scripts": {
     "precommit": "lint-staged",
+    "flow": "flow",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
@@ -33,6 +35,8 @@
     "eslint-plugin-flowtype": "^2.34.1",
     "eslint-plugin-import": "^2.6.0",
     "eslint-plugin-jsx-a11y": "^5.1.1",
-    "eslint-plugin-react": "^7.1.0"
+    "eslint-plugin-react": "^7.1.0",
+    "flow-bin": "^0.66.0",
+    "flow-remove-types": "^1.2.3"
   }
 }
