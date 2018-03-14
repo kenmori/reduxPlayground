@@ -1,5 +1,5 @@
 {
-  "extends": [ "prettier", "prettier/flowtype", "prettier/react", "prettier/standard"],
+  "extends": [ "prettier", "prettier/flowtype", "prettier/react", "prettier/standard", "plugin:react/recommended"],
   "plugins": ["react"],
   "parser": "babel-eslint",
   "parserOptions": {},
@@ -9,6 +9,9 @@
   },
   "globals": {},
   "rules": {
-    "react/jsx-uses-vars": 1
+    "react/jsx-uses-vars": 1,
+    "no-unused-vars": "error",
+    "no-debugger": "error",
+    "no-console": "error"
   }
 }
