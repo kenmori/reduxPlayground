@@ -13,10 +13,15 @@
     "react-scripts": "1.1.1"
   },
   "lint-staged": {
-    "src/**/*.{js,jsx, css, json}": [
+    "src/**/*.{js,jsx,json}": [
       "prettier --parser --write",
-      "prettier --single-quote --write",
+      "prettier --single-quote --tab-width=2 --print-width=120 --write",
       "eslint",
+      "git add"
+    ],
+    "src/**/*.css": [
+      "stylelint",
+      "prettier --parser postcss --tab-width=2 --print-width=120 --write",
       "git add"
     ]
   },
