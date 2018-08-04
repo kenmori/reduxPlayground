@@ -10,5 +10,5 @@
   "globals": {},
   "rules": {
     "react/jsx-uses-vars": 1
-  }
+ }
 }
